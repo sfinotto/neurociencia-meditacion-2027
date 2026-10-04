@@ -1,0 +1,193 @@
+---
+import Layout from "../layouts/Layout.astro";
+import EventCard from "../components/EventCard.astro";
+
+const event18 = {
+  date: "18 MARZO 2027",
+  eyebrow: "Comunidad de práctica · 400 personas",
+  title: "Neurociencia y meditación",
+  description:
+    "Un encuentro que cruza la meditación con los últimos hallazgos de la neurociencia contemporánea.",
+  audience: "Para la comunidad de práctica.",
+  href: "#encuentro-18"
+};
+
+const event19 = {
+  date: "19 MARZO 2027",
+  eyebrow: "Charla abierta · 600 personas",
+  title: "Presentación de «A World of Difference»",
+  description:
+    "Una charla abierta a todo el público y un punto de partida para iniciarse en la meditación, de la mano de Mingyur Rinpoche.",
+  audience: "Abierta a todo el público.",
+  href: "#encuentro-19"
+};
+---
+
+<Layout
+  title="Yongey Mingyur Rinpoche en Buenos Aires"
+  description="Dos encuentros con Yongey Mingyur Rinpoche en Buenos Aires, el 18 y 19 de marzo de 2027."
+>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <span class="brand-mark">T</span>
+      <span>TERGAR<br /><small>BUENOS AIRES</small></span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="#encuentros">Los encuentros</a>
+      <a href="#rinpoche">Mingyur Rinpoche</a>
+      <a href="#informacion">Información</a>
+    </nav>
+    <a class="header-cta" href="#inscripcion">Inscripciones</a>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="kicker">BUENOS AIRES · 18—19 MARZO 2027</p>
+        <h1>Neurociencia<br /><em>y</em> meditación</h1>
+        <p class="hero-subtitle">
+          Dos encuentros con <strong>Yongey Mingyur Rinpoche</strong>.
+          Una visita excepcional para explorar la meditación, la ciencia y nuestra experiencia de estar presentes.
+        </p>
+        <a class="button button-light" href="#encuentros">Conocé los encuentros <span>↓</span></a>
+      </div>
+      <div class="hero-side">
+        <span>01</span>
+        <span>02</span>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <div class="section-label">LA VISITA</div>
+      <div class="intro-copy">
+        <h2>Dos días.<br /><span>Dos propuestas.</span></h2>
+        <div>
+          <p>
+            Yongey Mingyur Rinpoche visita Argentina el 18 y 19 de marzo de 2027
+            para brindar dos encuentros dedicados a profundizar en la meditación y
+            la neurociencia.
+          </p>
+          <p>
+            Cada jornada propone una experiencia diferente y está pensada para
+            públicos distintos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="encuentros" class="events-section section">
+      <div class="section-label">LOS ENCUENTROS</div>
+      <div class="events-grid">
+        <EventCard {...event18} number="01" />
+        <EventCard {...event19} number="02" />
+      </div>
+    </section>
+
+    <section id="encuentro-18" class="detail detail-dark">
+      <div class="detail-number">01</div>
+      <div class="detail-content">
+        <p class="kicker">18 MARZO 2027 · COMUNIDAD DE PRÁCTICA</p>
+        <h2>Neurociencia<br /><em>y meditación</em></h2>
+        <p class="lead">
+          Un encuentro para la comunidad de práctica que cruza la meditación
+          con los últimos hallazgos de la neurociencia contemporánea.
+        </p>
+        <div class="detail-meta">
+          <div><span>DESTINADO A</span><strong>Comunidad de práctica</strong></div>
+          <div><span>CAPACIDAD</span><strong>400 personas</strong></div>
+          <div><span>SEDE</span><strong>A confirmar</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="encuentro-19" class="detail detail-paper">
+      <div class="detail-number">02</div>
+      <div class="detail-content">
+        <p class="kicker">19 MARZO 2027 · CHARLA ABIERTA</p>
+        <h2>Presentación de<br /><em>«A World of Difference»</em></h2>
+        <p class="lead">
+          Abierta a todo el público. Un punto de partida para iniciarse en la
+          meditación, de la mano de un maestro de reconocimiento mundial.
+        </p>
+        <div class="detail-meta">
+          <div><span>DESTINADO A</span><strong>Todo público</strong></div>
+          <div><span>CAPACIDAD</span><strong>600 personas</strong></div>
+          <div><span>SEDE</span><strong>A confirmar</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rinpoche" class="profile section">
+      <div class="profile-photo" role="img" aria-label="Espacio reservado para fotografía de Yongey Mingyur Rinpoche">
+        <span>FOTO<br />MINGYUR RINPOCHE</span>
+      </div>
+      <div class="profile-copy">
+        <div class="section-label">EL MAESTRO</div>
+        <h2>Yongey<br /><span>Mingyur Rinpoche</span></h2>
+        <p>
+          Nacido en 1975 en Nubri, en la frontera entre Nepal y el Tíbet,
+          Mingyur Rinpoche estuvo inmerso en la vida contemplativa desde pequeño.
+        </p>
+        <p>
+          Su experiencia le permitió unir la sabiduría budista tibetana con la
+          investigación científica contemporánea. Desde 2002 participó en
+          estudios sobre meditación y neurociencia en la Universidad de Wisconsin.
+        </p>
+        <p>
+          Es autor de «La alegría de vivir», traducido a más de veinte idiomas,
+          y de «A World of Difference».
+        </p>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="quote-mark">“</div>
+      <blockquote>
+        El verdadero bienestar no reside en transformarnos en alguien distinto,
+        sino en aprender a transformar los desafíos y las emociones difíciles
+        en peldaños hacia nuestra propia libertad y dicha.
+      </blockquote>
+      <cite>— Rosario Cadenas, Coordinadora de evento de Tergar Buenos Aires</cite>
+    </section>
+
+    <section id="informacion" class="info section">
+      <div>
+        <div class="section-label">INFORMACIÓN</div>
+        <h2>Buenos Aires<br /><span>18—19.03.2027</span></h2>
+      </div>
+      <div class="info-list">
+        <div><span>SEDE</span><strong>A confirmar</strong></div>
+        <div><span>ACCESO</span><strong>Información próximamente</strong></div>
+        <div><span>ORGANIZA</span><strong>Tergar Buenos Aires</strong></div>
+      </div>
+    </section>
+
+    <section id="inscripcion" class="register">
+      <p class="kicker">PRÓXIMAMENTE</p>
+      <h2>Inscripciones</h2>
+      <p>
+        La información sobre inscripción, sede y modalidad de acceso será anunciada
+        por Tergar Buenos Aires.
+      </p>
+      <a class="button" href="https://www.instagram.com/tergar_buenosaires/" target="_blank" rel="noreferrer">
+        Seguir a Tergar Buenos Aires <span>↗</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="brand">
+      <span class="brand-mark">T</span>
+      <span>TERGAR<br /><small>BUENOS AIRES</small></span>
+    </div>
+    <div>
+      <p>Yongey Mingyur Rinpoche en Buenos Aires</p>
+      <p>18—19 marzo 2027</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/tergar_buenosaires/" target="_blank" rel="noreferrer">Instagram ↗</a>
+      <a href="https://tergar.org/" target="_blank" rel="noreferrer">tergar.org ↗</a>
+    </div>
+  </footer>
+</Layout>

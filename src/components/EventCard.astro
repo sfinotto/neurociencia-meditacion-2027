@@ -1,0 +1,14 @@
+---
+const { number, date, eyebrow, title, description, audience, href } = Astro.props;
+---
+<article class="event-card">
+  <div class="event-top">
+    <span class="event-number">{number}</span>
+    <span class="event-date">{date}</span>
+  </div>
+  <p class="event-eyebrow">{eyebrow}</p>
+  <h3>{title}</h3>
+  <p class="event-description">{description}</p>
+  <p class="event-audience">{audience}</p>
+  <a class="text-link" href={href}>Conocé este encuentro <span>→</span></a>
+</article>
