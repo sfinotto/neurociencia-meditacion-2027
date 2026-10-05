@@ -1,5 +1,6 @@
-import { defineConfig } from "astro/config";
+import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: "https://example.pages.dev"
+  site: 'https://sfinotto.github.io',
+  base: '/neurociencia-meditacion-2027',
 });
